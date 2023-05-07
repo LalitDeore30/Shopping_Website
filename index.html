@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" href="bag.ico">
+	<title>Online Shopping Website</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		.cart {
+            height: 45px;
+            filter: invert(1);
+            width: 70;
+            height: 70;
+            padding-right: 10px;
+            justify-content: center;
+        }
+		nav {
+			background-color: #ecd4ab;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px 20px;
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+		}
+
+		nav ul {
+			list-style: none;
+			margin: 1;
+			padding: 0;
+			display: flex;
+		}
+
+
+		nav ul li a {
+			display: block;
+			padding: 10px;
+			color: #333;
+			font-weight: bold;
+            text-decoration: none;
+		}
+
+		nav ul li a:hover {
+			background-color: #333;
+			color: #fff;
+			border-radius: 5px;
+		}
+        .shop {
+			display: flex;
+			height: 600px;
+			width: 100%;
+		}
+		.container {
+			max-width: 1100px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+		section {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-bottom: 20px;
+		}
+
+        h1 {
+			margin: 0;
+			font-size: 40px;
+			font-weight: bold;
+		}
+
+
+		input {
+			font-size: 15px;
+			height: 25px;
+			border-radius: 8px;
+			border-color: #e5e3e3;
+			text-align: center;
+		}
+		
+        .submit {
+			height: 30px;
+			width: 80px;
+			margin-left: 10px;
+			border-radius: 5px;
+			cursor: pointer;
+			background-color: #1cccef;
+			border-color: #5c6dee;
+			color: #f2f2f2;
+		}
+
+		section h2 {
+			text-align: center;
+			font-size: 30px;
+			font-weight: bold;
+			margin-bottom: 20px;
+			width: 100%;
+			background-color: rgb(245, 200, 152);
+			padding-top: 10px;
+			padding-bottom: 10px;
+			color: #faf9f9;
+		}
+
+		.product {
+			background-color: #fff;
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+			padding: 20px;
+            width: 200px;
+			margin-bottom: 20px;
+		}
+
+		.product img {
+			display: block;
+			max-width: 100%;
+		}
+
+		.product h3 {
+			font-size: 20px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		.product p {
+			font-size: 16px;
+			margin-bottom: 10px;
+		}
+
+		.product button {
+			background-color: #4ca4da;
+			border: none;
+			color: #fff;
+			padding: 10px 20px;
+			text-transform: uppercase;
+			cursor: pointer;
+			border-radius:8px;
+
+		}
+
+		.product button:hover {
+			background-color: #ffffff;
+			color: #333;
+		}
+		footer {
+            height: 100%;
+            background-color: #ddd;
+            justify-content: center;
+            text-align: center;
+            font-size: 20px;
+            padding-top: 1rem;
+        }
+		footer p{
+            color: #333;
+            text-align: center;
+            font-size: 15px;
+            font-family: "Rajdhani", sans-serif;
+			padding-bottom: 1rem;
+			align-items: center;
+        }
+
+		@media screen and (max-width: 750px) 
+		{
+			section {
+				flex-direction: column;
+			}
+
+			.product {
+				width: 100%;
+			}
+			section h2 {
+				font-size: 20px;
+			}
+
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<div>
+			<ul>
+				<li><img src="cart.png" class="cart" /></li>
+				<li><a href="#Electronics">Electronics</a></li>
+				<li><a href="#Clothing">Clothing</a></li>
+				<li><a href="#Footwear">Footwear</a></li>
+				<li><a href="#Furniture">Furniture</a></li>
+			</ul>
+		</div>	
+		<div>
+			<input type="text" name="search" placeholder="search">
+		    <button type="submit" class="submit">Search</button>
+		</div>
+	</nav>
+	<img src="shop4.jpg" class="shop">
+	<div class="container">
+		<section id="Electronics">
+			<h2 class="c">Electronic Items</h2>
+			<div class="product">
+				<img src="samsung2.jpeg" alt="Product Image">
+				<h3>TV 1</h3>
+				<p> 4K Neo Series 108 cm (43 inch) Ultra HD (4K) LED Smart Tizen TV with Voice Search</p>
+				<b>₹10,XXX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="samsung3.jpeg" alt="Product Image">
+				<h3>TV 2</h3>
+				<p>3K  Series 100 cm (40 inch)  HD (3K) LED Smart Tizen TV with Voice Search</p>
+				<b>₹30,XXX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="samsung3.jpeg" alt="Product Image">
+				<h3>TV 3</h3>
+				<p> 5K Series 120 cm (45 inch) Ultra  (5K) LED Smart  TV with Voice Search</p>
+				<b>₹20,XXX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="samsung2.jpeg" alt="Product Image">
+				<h3>TV 4</h3>
+				<p>LG UQ75 43 (108cm) 4K UHD Smart TV | WebOS | Active HDR</p>
+				<b>₹10,XXX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="one plus.jpeg" alt="Product Image">
+				<h3>Phone 1</h3>
+				<p>6GB RAM and 128GB Internal Memory</p>
+				<b>₹10,XXX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="iphone14.jpeg" alt="Product Image">
+				<h3>Phone 2</h3>
+				<p>5GB RAM and 122GB Internal Memory</p>
+				<b>₹20,XXX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="one plus.jpeg" alt="Product Image">
+				<h3>Phone 3</h3>
+				<p>4GB RAM and 130GB Internal Memory</p>
+				<b>₹30,XXX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="one plus.jpeg" alt="Product Image">
+				<h3>Phone 4</h3>
+				<p>8GB RAM and 256GB Internal Memory</p>
+				<b>₹40,XXX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="fridge1.jpeg" alt="Product Image">
+				<h3>Fridge</h3>
+				<p>Wseries 537L Frost-Free Side by Side Refrigerator</p>
+				<b>₹70,XXX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+		</section>
+
+		<section id="Clothing">
+		<h2>Cloths</h2>
+			<div class="product">
+				<img src="Tshirt1.webp" alt="Product Image">
+				<h3>T-Shirt 1</h3>
+				<p>Very smooth silk T-Shirt</p>
+				<b>₹10X</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="Tshirt2.avif" alt="Product Image">
+				<h3>T-Shirt 2</h3>
+				<p>T-Shirt made with wool</p>
+				<b>₹4XX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="Tshirt1.webp" alt="Product Image">
+				<h3>T-Shirt 3</h3>
+				<p>Sporty T-Shirt,which is very flexible</p>
+				<b>₹5X,XX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="Tshirt2.avif" alt="Product Image">
+				<h3>T-Shirt 4</h3>
+				<p>T-Shirt made with pure wool</p>
+				<b>₹4XX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="sari3.jpeg" alt="Product Image">
+				<h3>Sari 1</h3>
+				<p>Sari made with Silk</p>
+				<b>₹4XXX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="sari2.jpeg" alt="Product Image">
+				<h3>Sari 2</h3>
+				<p>Sari made with Wool</p>
+				<b>₹4XX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="sari3.jpeg" alt="Product Image">
+				<h3>Sari 3</h3>
+				<p>Sari made with Khadi</p>
+				<b>₹5XXX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="sari4.jpeg" alt="Product Image">
+				<h3>Sari 4</h3>
+				<p>sari made with Resham</p>
+				<b>₹1XXX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="jeans1.jpg" alt="Product Image">
+				<h3>Jeans 1</h3>
+				<p>5-pocket, ankle-length jeans in sturdy denim with a high waist</p>
+				<b>₹1XXX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="jeans1.jpg" alt="Product Image">
+				<h3>Jeans 2</h3>
+				<p>2-pocket, zip fly and button and straight legs</p>
+				<b>₹2XX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="jeans3.jpeg" alt="Product Image">
+				<h3>Jeans 3</h3>
+				<p>10-pocket, zip fly and straight legs</p>
+				<b>₹1XX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="jeans3.jpeg" alt="Product Image">
+				<h3>Jeans 4</h3>
+				<p>1-pocket, ankle-length jeans in sturdy denim with a low waist</p>
+				<b>₹1XXX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+		</section>
+
+		<section id="Footwear">
+			<h2 >Footwear</h2>
+			<div class="product">
+				<img src="shoe1.jpeg" alt="Product Image">
+				<h3>Shoe 1</h3>
+				<p>ASIAN Crystal-13 Sports Running,Walking & Gym Shoes </p>
+				<b>₹5XX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="shoe3.jpeg" alt="Product Image">
+				<h3>Shoe 2</h3>
+				<p>Crystal Cushion Technology Lightweight Casual Sneaker Shoes for & Boy's</p>
+				<b>₹2XXX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="shoe1.jpeg" alt="Product Image">
+				<h3>Shoe 3</h3>
+				<p>Campus's shoe is minimalist and lightweight</p>
+				<b>₹1XXX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="shoe3.jpeg" alt="Product Image">
+				<h3>Shoe 4</h3>
+				<p>Crystal Cushion Technology Lightweight Casual Sneaker Shoes for & Boy's</p>
+				<b>₹1XX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="chappal1.jpeg" alt="Product Image">
+				<h3>Chappal 1</h3>
+				<p>Burge - Dark Brown Kolhapuri Chappal For Men</p>
+				<b>₹4XX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="chappal2.jpeg" alt="Product Image">
+				<h3>Chappal 2</h3>
+				<p>New fashion latest design casual slippers for boys stylish</p>
+				<b>₹5XX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="chappal1.jpeg" alt="Product Image">
+				<h3>Chappal 3</h3>
+				<p>Burge - Dark Brown Kolhapuri Chappal For Men</p>
+				<b>₹2XX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="chappal2.jpeg" alt="Product Image">
+				<h3>Chappal 4</h3>
+				<p>Perfect flip flops for daily wear walking Slippers Slides</p>
+				<b>₹1XXX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+        </section>
+
+		<section id="Furniture">
+			<h2 >Furniture</h2>
+			<div class="product">
+				<img src="chair.jpeg" alt="Product Image">
+				<h3>Chair</h3>
+				<p>Echo Solid Wood Dining Chair</p>
+				<b>₹1XXX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="couch.jpeg" alt="Product Image">
+				<h3>Couch</h3>
+				<p>Stylish Couch</p>
+				<b>₹2XX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="cupboard.jpeg" alt="Product Image">
+				<h3>Cupboard</h3>
+				<p>Modular Wooden Cupboard, Size/Dimension: 7*3 Feet</p>
+				<b>₹13XX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="cupboard2.jpeg" alt="Product Image">
+				<h3>Full Furniture</h3>
+				<p>Cupboard design for hall for an aesthetic storage solution</p>
+				<b>₹2XX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			<div class="product">
+				<img src="table.jpeg" alt="Product Image">
+				<h3>Table</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<b>₹1XXX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			
+			<div class="product">
+				<img src="couch.jpeg" alt="Product Image">
+				<h3>Couch</h3>
+				<p>Stylish Couch</p>
+				<b>₹8XX</b>
+				<br>
+				<br>
+				<button>Add to Cart</button>
+			</div>
+			
+        </section>
+	<footer>
+	  <p>Copyright © 2023 shoping.com All writes reserved</p>
+	</footer>
+    </body>
+</html>
